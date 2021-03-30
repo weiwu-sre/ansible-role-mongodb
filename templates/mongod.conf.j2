@@ -124,3 +124,8 @@ setParameter:
   {{ key }}: {{ value }}
   {% endfor %}
 {% endif %}
+
+{% if mongodb_sharding_cluster_role -%}
+sharding:
+   clusterRole: {{ mongodb_sharding_cluster_role }}
+{% endif %}
